@@ -4,7 +4,7 @@ Auto Upgrade T3rn Node
 Instruction 
 
 1. Go to https://blastapi.io and create your API KEY for RPC 
-2. Download upgrade.sh 
+2. Download upgrade 
    - `wget https://raw.githubusercontent.com/Moniak13/T3rn/refs/heads/main/upgrade`
 2. or just do 
    - nano upgrade
