@@ -13,7 +13,8 @@ Instruction
 3. Run Screen 
    - `screen -S <name>`    <---- New screen for Node
    - `screen -R <name>`    <---- if u have screen created
-4. Run upgrade.sh
-   - `./upgrade.sh`
-5. If its all done 
+4. chmod +x upgrade
+5. Run upgrade
+   - `./upgrade`
+6. If its all done 
    - CTRL + A + D
