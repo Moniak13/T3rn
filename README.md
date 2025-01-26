@@ -5,7 +5,7 @@ Instruction
 
 1. Go to https://blastapi.io and create your API KEY for RPC 
 2. Download upgrade.sh 
-   - `wget https://raw.githubusercontent.com/Moniak13/T3rn/refs/heads/main/upgrade.sh`
+   - `wget https://raw.githubusercontent.com/Moniak13/T3rn/refs/heads/main/upgrade`
 2. or just do 
    - nano upgrade.sh
      copy raw code and pass it to file 
