@@ -109,7 +109,7 @@ fi
 # Requesting manual input for EXECUTOR_MAX_L3_GAS_PRICE
 echo -n "Enter max GAS (Default is 200): "
 read EXECUTOR_MAX_L3_GAS_PRICE
-fi
+
 
 echo "GAS PRICE used: $EXECUTOR_MAX_L3_GAS_PRICE"
 
