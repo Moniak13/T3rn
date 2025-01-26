@@ -7,7 +7,7 @@ Instruction
 2. Download upgrade.sh 
    - `wget https://raw.githubusercontent.com/Moniak13/T3rn/refs/heads/main/upgrade`
 2. or just do 
-   - nano upgrade.sh
+   - nano upgrade
      copy raw code and pass it to file 
      CTRL+X+Y
 3. Run Screen 
