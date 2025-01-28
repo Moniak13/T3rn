@@ -6,11 +6,12 @@ Instruction
 1. Go to https://blastapi.io and create your API KEY for RPC 
 2. Download upgrade 
    - `wget https://raw.githubusercontent.com/Moniak13/T3rn/refs/heads/main/upgrade`
-3. Run Screen 
+3. Run Screen
+   - install screen 'apt install screen'
    - `screen -S <name>`    <---- New screen for Node
    - `screen -R <name>`    <---- if u have screen created
-4. chmod +x upgrade
-5. Run upgrade
+5. chmod +x upgrade
+6. Run upgrade
    - `./upgrade`
-6. If its all done 
+7. If its all done 
    - CTRL + A + D
