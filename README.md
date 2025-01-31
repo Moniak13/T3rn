@@ -13,18 +13,21 @@ Install library
    - `cd t3rn` 
 3. Run Screen
    - `screen -S t3rn`
-4. Go to https://blastapi.io and create your API KEY for RPC 
-   - Copy only Project ID
-5. Download upgrade 
+4. Download upgrade 
    - `wget https://raw.githubusercontent.com/Moniak13/T3rn/refs/heads/main/Node`
-6. Give permission
+5. Give permission
    - `chmod +x Node`
-7. Run upgrade
+6. Run upgrade
    - `./Node`
-8. Close sesion 
+7. Go to https://blastapi.io and create your API KEY for RPC 
+   - Copy only Project ID
+8. Copy your private key
+9. Close sesion 
    - `CTRL + A + D`
 
 <h1>Upgrade Node without reconfigurate</h1>
+
+<h2>Default folder - t3rn</h2>
 
 1. Open screen sesion
       - `screen -r t3rn`
