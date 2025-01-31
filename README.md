@@ -4,7 +4,9 @@ install library
    - `apt install screen`
 
 Instruction To Run Node 
-3. Create Folder - `mkdir t3rn`
+
+
+1. Create Folder - `mkdir t3rn`
    - `cd t3rn` 
 3. Run Screen
    - `screen -S t3rn`    <---- New screen for Node
