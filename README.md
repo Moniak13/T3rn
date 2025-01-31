@@ -23,8 +23,8 @@ Install library
 8. Go to https://blastapi.io and create your API KEY for RPC 
    - Copy only Project ID
 9. Set gas gwei 
-10. Close sesion 
-   - `CTRL + A + D`
+10. Close sesion
+    - `CTRL + A + D`
 
 <h1>Upgrade Node without reconfigurate</h1>
 
