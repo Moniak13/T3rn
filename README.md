@@ -1,5 +1,5 @@
 # T3rn
-Auto Upgrade T3rn Node
+Set up T3rn Node
 
 Instruction 
 
@@ -16,3 +16,6 @@ Instruction
    - `./upgrade`
 7. If its all done 
    - CTRL + A + D
+
+Upgrade Node
+
