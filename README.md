@@ -16,7 +16,7 @@ Instruction To Run Node
 5. Download upgrade 
    - `wget https://raw.githubusercontent.com/Moniak13/T3rn/refs/heads/main/Node`
 6. Give permission
-   - `chmod + x Node`
+   - `chmod +x Node`
 7. Run upgrade
    - `./upgrade`
 8. Close sesion 
@@ -30,7 +30,7 @@ Upgrade Node without reconfigurate config
 3. Download files
    - `wget https://raw.githubusercontent.com/Moniak13/T3rn/refs/heads/main/Upgrade`
 4. Give permission
-   - `chmod + x Upgrade`
+   - `chmod +x Upgrade`
 5. Run
    - `./Upgrade`
 6. Close sesion 
