@@ -24,6 +24,8 @@ Instruction To Run Node
 Upgrade Node without reconfigurate config
 1. Open screen sesion
       - `screen -r t3rn`
+2. Stop Node
+   -`CTRL + C`
 2. Download files
    - `wget https://raw.githubusercontent.com/Moniak13/T3rn/refs/heads/main/Upgrade`
 3. Give permission
