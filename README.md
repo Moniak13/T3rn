@@ -19,10 +19,11 @@ Install library
    - `chmod +x Node`
 6. Run upgrade
    - `./Node`
-7. Go to https://blastapi.io and create your API KEY for RPC 
+7. Copy your private key
+8. Go to https://blastapi.io and create your API KEY for RPC 
    - Copy only Project ID
-8. Copy your private key
-9. Close sesion 
+9. Set gas gwei 
+10. Close sesion 
    - `CTRL + A + D`
 
 <h1>Upgrade Node without reconfigurate</h1>
