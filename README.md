@@ -6,7 +6,7 @@
 Install library
    - `apt install screen`
 
-<h1>Instruction To Run Node</h1>
+<h1>Instruction To Run New Node</h1>
 
 1. Create Folder
    - `mkdir t3rn`
