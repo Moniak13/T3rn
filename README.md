@@ -14,7 +14,7 @@ Instruction To Run Node
 4. Go to https://blastapi.io and create your API KEY for RPC 
    - Copy only Project ID
 5. Download upgrade 
-   - `wget https://raw.githubusercontent.com/Moniak13/T3rn/refs/heads/main/upgrade`
+   - `wget https://raw.githubusercontent.com/Moniak13/T3rn/refs/heads/main/Node`
 6. chmod +x upgrade
 7. Run upgrade
    - `./upgrade`
