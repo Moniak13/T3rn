@@ -15,7 +15,8 @@ Instruction To Run Node
    - Copy only Project ID
 5. Download upgrade 
    - `wget https://raw.githubusercontent.com/Moniak13/T3rn/refs/heads/main/Node`
-6. chmod +x upgrade
+6. Give permission
+   - `chmod + x Node`
 7. Run upgrade
    - `./upgrade`
 8. Close sesion 
