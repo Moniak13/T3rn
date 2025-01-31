@@ -23,7 +23,7 @@ Instruction To Run Node
 
 Upgrade Node without reconfigurate config
 
-   1.Download files  
+      1.Download files  
    - `wget https://raw.githubusercontent.com/Moniak13/T3rn/refs/heads/main/Upgrade`
 2. Give permission
    - `chmod + x Upgrade`
