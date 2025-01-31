@@ -18,8 +18,8 @@ Instruction To Run Node
 6. chmod +x upgrade
 7. Run upgrade
    - `./upgrade`
-8. If its all done 
-   - CTRL + A + D
+8. Close sesion 
+   - `CTRL + A + D`
 
 Upgrade Node without reconfigurate config
 1. Open screen sesion
@@ -32,6 +32,6 @@ Upgrade Node without reconfigurate config
    - `chmod + x Upgrade`
 5. Run
    - `./Upgrade`
-6. `CTRL + A + D`
-
+6. Close sesion 
+   - `CTRL + A + D`
 
