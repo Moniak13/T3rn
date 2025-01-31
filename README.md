@@ -1,10 +1,12 @@
 # T3rn
 Set up T3rn Node
 
+<h1>Default folder - t3rn</h1>
+
 Install library
    - `apt install screen`
 
-Instruction To Run Node 
+<h1>Instruction To Run Node</h1>
 
 1. Create Folder
    - `mkdir t3rn`
@@ -18,23 +20,33 @@ Instruction To Run Node
 6. Give permission
    - `chmod +x Node`
 7. Run upgrade
-   - `./upgrade`
+   - `./Node`
 8. Close sesion 
    - `CTRL + A + D`
 
-Upgrade Node without reconfigurate config
+<h1>Upgrade Node without reconfigurate</h1>
+
 1. Open screen sesion
       - `screen -r t3rn`
 2. Stop Node
    - `CTRL + C`
-3. Download files
+3. Switch folder
+   - `cd`
+   - `cd t3rn`
+4. Download files
    - `wget https://raw.githubusercontent.com/Moniak13/T3rn/refs/heads/main/Upgrade`
-4. Give permission
+5. Give permission
    - `chmod +x Upgrade`
-5. Run
+6. Run
    - `./Upgrade`
-6. Close sesion 
+7. Switch folder
+   - `cd executor/executor/bin`
+8. Give permission
+   - `chmod +x t3rnAutorestart.sh`
+9. Run Autorestart
+   - `./t3rnAutorestart.sh`
+10. Close sesion 
    - `CTRL + A + D`
   
-If u wanna get back to sesion
-   - `screen -r t3rn`
+<h3> If u wanna get back to sesion </h3>
+<h3>screen -r t3rn</h3>
