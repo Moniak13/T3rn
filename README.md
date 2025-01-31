@@ -5,7 +5,7 @@ install library
 
 Instruction To Run Node 
 1. Create folder 'mkdir t3rn'
-   -'cd t3rn' <--- switch folder
+   -`cd t3rn` <--- switch folder
 3. Run Screen
    - `screen -S t3rn`    <---- New screen for Node
    - `screen -R t3rn`    <---- if u have screen created
