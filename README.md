@@ -1,19 +1,22 @@
 # T3rn
 Set up T3rn Node
+install library
+   - 'apt install screen'
 
-Instruction 
-1. Run Screen
-   - install screen `apt install screen`
-   - `screen -S <name>`    <---- New screen for Node
-   - `screen -R <name>`    <---- if u have screen created
-2. Go to https://blastapi.io and create your API KEY for RPC 
+Instruction To Run Node 
+1. create folder 'mkdir t3rn'
+   -'cd t3rn' <--- switch folder
+2. Run Screen
+   - `screen -S t3rn`    <---- New screen for Node
+   - `screen -R t3rn`    <---- if u have screen created
+3. Go to https://blastapi.io and create your API KEY for RPC 
    - Copy only Project ID
-3. Download upgrade 
+4. Download upgrade 
    - `wget https://raw.githubusercontent.com/Moniak13/T3rn/refs/heads/main/upgrade`
-4. chmod +x upgrade
-5. Run upgrade
+5. chmod +x upgrade
+6. Run upgrade
    - `./upgrade`
-6. If its all done 
+7. If its all done 
    - CTRL + A + D
 
 Upgrade Node
