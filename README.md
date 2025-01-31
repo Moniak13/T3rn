@@ -1,7 +1,7 @@
 # T3rn
 Set up T3rn Node
 
-install library
+Install library
    - `apt install screen`
 
 Instruction To Run Node 
