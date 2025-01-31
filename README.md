@@ -5,19 +5,20 @@ install library
 
 Instruction To Run Node 
 
-1. Create Folder - `mkdir t3rn`
+1. Create Folder -
+   - `mkdir t3rn`
    - `cd t3rn` 
-2. Run Screen
+3. Run Screen
    - `screen -S t3rn`    <---- New screen for Node
    - `screen -R t3rn`    <---- if u have screen created
-3. Go to https://blastapi.io and create your API KEY for RPC 
+4. Go to https://blastapi.io and create your API KEY for RPC 
    - Copy only Project ID
-4. Download upgrade 
+5. Download upgrade 
    - `wget https://raw.githubusercontent.com/Moniak13/T3rn/refs/heads/main/upgrade`
-5. chmod +x upgrade
-6. Run upgrade
+6. chmod +x upgrade
+7. Run upgrade
    - `./upgrade`
-7. If its all done 
+8. If its all done 
    - CTRL + A + D
 
 Upgrade Node
