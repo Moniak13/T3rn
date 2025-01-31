@@ -1,7 +1,7 @@
 # T3rn
-Set up T3rn Node
+<h1>Set up T3rn Node</h1>
 
-<h1>Default folder - t3rn</h1>
+<h2>Default folder - t3rn</h2>
 
 Install library
    - `apt install screen`
