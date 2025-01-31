@@ -9,7 +9,7 @@ Instruction To Run Node
    - `mkdir t3rn`
    - `cd t3rn` 
 3. Run Screen
-   - `screen -S t3rn`    <---- New screen for Node
+   - `screen -S t3rn`
 4. Go to https://blastapi.io and create your API KEY for RPC 
    - Copy only Project ID
 5. Download upgrade 
