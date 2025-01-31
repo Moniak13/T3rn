@@ -91,7 +91,7 @@ echo -n "Enter PRIVATE KEY: "
 read PRIVATE_KEY_LOCAL  # Input is visible as it is typed
 echo "Your PRIVATE KEY: $PRIVATE_KEY_LOCAL"
 
-# Request manual input for ACLHEMY RPC API
+# Request manual input for BLASTAPI RPC API
 echo -n "Enter Your API KEY : "
 read KEYBLASTAPI  # Input is visible as it is typed
 
