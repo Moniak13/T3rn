@@ -25,13 +25,13 @@ Upgrade Node without reconfigurate config
 1. Open screen sesion
       - `screen -r t3rn`
 2. Stop Node
-   -`CTRL + C`
-2. Download files
+   - `CTRL + C`
+3. Download files
    - `wget https://raw.githubusercontent.com/Moniak13/T3rn/refs/heads/main/Upgrade`
-3. Give permission
+4. Give permission
    - `chmod + x Upgrade`
-4. Run
+5. Run
    - `./Upgrade`
-5. `CTRL + A + D`
+6. `CTRL + A + D`
 
 
