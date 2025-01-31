@@ -1,1 +1,85 @@
 
+#!/bin/bash
+
+# Set variables
+REPO_API="https://api.github.com/repos/t3rn/executor-release/releases/latest"
+ARCHIVE_NAME="executor-latest.tar.gz"
+DOWNLOAD_FOLDER="executor"
+# Clean up any existing files or folders
+if [[ -f "$ARCHIVE_NAME" ]]; then
+    echo "Removing existing archive: $ARCHIVE_NAME"
+    rm -f "$ARCHIVE_NAME"
+fi
+
+if [[ -d "$DOWNLOAD_FOLDER" ]]; then
+    echo "Removing existing folder: $DOWNLOAD_FOLDER"
+    rm -rf "$DOWNLOAD_FOLDER"
+fi
+
+# Fetch the latest tag from GitHub API
+echo "Fetching the latest release tag..."
+LATEST_TAG=$(curl -s "$REPO_API" | grep -Po '"tag_name": "\K.*?(?=")')
+
+if [[ -z "$LATEST_TAG" ]]; then
+    echo "Error: Failed to fetch the latest release tag. Please check your network or repository API access."
+    exit 1
+fi
+
+# Download the latest tarball
+DOWNLOAD_URL="https://github.com/t3rn/executor-release/releases/download/${LATEST_TAG}/executor-linux-${LATEST_TAG}.tar.gz"
+echo "Downloading the latest version from: $DOWNLOAD_URL"
+wget -O "$ARCHIVE_NAME" "$DOWNLOAD_URL"
+
+if [[ $? -ne 0 ]]; then
+    echo "Error: Failed to download the tarball. Please check the URL or your network connection."
+    exit 1
+fi 
+echo "Download complete: $ARCHIVE_NAME"
+
+# Unpack the tarball
+echo "Unpacking the tarball"
+tar -xzf "$ARCHIVE_NAME"
+
+if [[ $? -eq 0 ]]; then
+    echo "Unpacking complete. The latest version is available in the $DOWNLOAD_FOLDER directory."
+else
+    echo "Error: Failed to unpack the tarball."
+    exit 1
+fi
+
+# Create the t3rnAutorestart.sh script in the appropriate directory
+autorestart_file="$DOWNLOAD_FOLDER/executor/bin/t3rnAutorestart.sh"
+mkdir -p "$(dirname "$autorestart_file")"
+echo "Creating t3rnAutorestart.sh..."
+cat << 'EOF' > "$autorestart_file"
+#!/bin/bash
+
+while true; do
+    echo "Starting Executor..."
+
+    ./executor &
+
+    executor_pid=$!
+
+    tail -f executor.log | while read line; do
+        # Verify if "_bootstrapPoll: null" 
+        if echo "$line" | grep -q "_bootstrapPoll: null"; then
+            echo "Crash detected ('_bootstrapPoll: null'). Restarting..."
+            kill $executor_pid
+            break
+        fi 
+done
+
+    wait $executor_pid
+
+    echo "Restarting Executor in 5 seconds..."
+    sleep 5
+done
+EOF
+
+chmod +x "$autorestart_file"
+echo "t3rnAutorestart.sh script created at $autorestart_file"
+
+# Optional: Cleanup the tarball
+# Uncomment the line below if you want to delete the tarball after unpacking
+# rm "$ARCHIVE_NAME"
