@@ -35,4 +35,6 @@ Upgrade Node without reconfigurate config
    - `./Upgrade`
 6. Close sesion 
    - `CTRL + A + D`
-
+  
+If u wanna get back to sesion
+   - `screen -r t3rn`
