@@ -21,7 +21,9 @@ Instruction To Run Node
 8. If its all done 
    - CTRL + A + D
 
-Upgrade Node
+Upgrade Node without reconfigurate config
 
-1. 
+1.Download files
+   - `wget https://raw.githubusercontent.com/Moniak13/T3rn/refs/heads/main/Node%20Upgrade`
+2. chmod
 
