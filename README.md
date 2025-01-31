@@ -48,8 +48,8 @@ Install library
    - `chmod +x t3rnAutorestart.sh`
 9. Run Autorestart
    - `./t3rnAutorestart.sh`
-10. Close sesion 
-   - `CTRL + A + D`
+10. Close sesion
+    - `CTRL + A + D`
   
 <h3> If u wanna get back to sesion </h3>
 <h3>screen -r t3rn</h3>
