@@ -82,3 +82,53 @@ echo "t3rnAutorestart.sh script created at $autorestart_file"
 # Optional: Cleanup the tarball
 # Uncomment the line below if you want to delete the tarball after unpacking
 # rm "$ARCHIVE_NAME"
+
+# Move to the binary executor directory
+cd executor/executor/bin || { echo "Directory not found!"; exit 1; }
+
+# Request manual input for PRIVATE_KEY_LOCAL
+echo -n "Enter PRIVATE KEY: "
+read PRIVATE_KEY_LOCAL  # Input is visible as it is typed
+echo "Your PRIVATE KEY: $PRIVATE_KEY_LOCAL"
+
+# Request manual input for ACLHEMY RPC API
+echo -n "Enter Your API KEY : "
+read KEYBLASTAPI  # Input is visible as it is typed
+
+# Check if KEYBLASTAPI is empty
+if [ -z "$KEYBLASTAPI" ]; then
+  echo "Your API KEY is empty, bypassing the RPC endpoint configuration for Blastapi.io."
+else
+  echo "Your API KEY: $KEYBLASTAPI"
+  export RPC_ENDPOINTS_ARBT="https://arbitrum-sepolia.blastapi.io/$KEYBLASTAPI,https://arbitrum-sepolia-rpc.publicnode.com"
+  export RPC_ENDPOINTS_BSSP="https://base-sepolia.blastapi.io/$KEYBLASTAPI,https://sepolia.base.org"
+  export RPC_ENDPOINTS_BLSS="https://blastl2-sepolia.blastapi.io/$KEYBLASTAPI,https://sepolia.blast.io"
+  export RPC_ENDPOINTS_OPSP="https://optimism-sepolia.blastapi.io/$KEYBLASTAPI,https://sepolia.optimism.io"
+fi
+
+# Requesting manual input for EXECUTOR_MAX_L3_GAS_PRICE
+echo -n "Enter max GAS (Default is 200): "
+read EXECUTOR_MAX_L3_GAS_PRICE
+
+
+echo "GAS PRICE used: $EXECUTOR_MAX_L3_GAS_PRICE"
+
+# Setting up environment variables
+export NODE_ENV=testnet
+export LOG_LEVEL=debug
+export LOG_PRETTY=false
+export EXECUTOR_PROCESS_ORDERS=true
+export EXECUTOR_PROCESS_CLAIMS=true
+export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
+export EXECUTOR_PROCESS_ORDERS_API_ENABLED=false
+export EXECUTOR_ENABLE_BATCH_BIDDING=true
+export EXECUTOR_PROCESS_BIDS_ENABLED=true
+export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,blast-sepolia,optimism-sepolia,l1rn'
+export PRIVATE_KEY_LOCAL="$PRIVATE_KEY_LOCAL"
+export EXECUTOR_MAX_L3_GAS_PRICE="$EXECUTOR_MAX_L3_GAS_PRICE"
+export RPC_ENDPOINTS_L1RN='https://brn.rpc.caldera.xyz/,https://brn.calderarpc.com/http'
+
+# Launching t3rnAutorestart.sh
+echo -e "Running t3rnAutorestart.sh with current configuration..."
+sleep 2
+./t3rnAutorestart.sh
