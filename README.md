@@ -22,12 +22,14 @@ Instruction To Run Node
    - CTRL + A + D
 
 Upgrade Node without reconfigurate config
-
- 1.Download files  
+1. Open screen sesion
+      - `screen -r t3rn`
+2. Download files
    - `wget https://raw.githubusercontent.com/Moniak13/T3rn/refs/heads/main/Upgrade`
-2. Give permission
+3. Give permission
    - `chmod + x Upgrade`
-3. Run
+4. Run
    - `./Upgrade`
+5. `CTRL + A + D`
 
 
