@@ -114,7 +114,7 @@ read EXECUTOR_MAX_L3_GAS_PRICE
 echo "GAS PRICE used: $EXECUTOR_MAX_L3_GAS_PRICE"
 
 # Setting up environment variables
-export NODE_ENV=testnet
+export ENVIRONMENT=testnet
 export LOG_LEVEL=debug
 export LOG_PRETTY=false
 export EXECUTOR_PROCESS_ORDERS=true
