@@ -107,7 +107,7 @@ else
 fi
 
 # Requesting manual input for EXECUTOR_MAX_L3_GAS_PRICE
-echo -n "Enter max GAS (Default is 200): "
+echo -n "Enter max GAS (Default is 200, but it may be much larger): "
 read EXECUTOR_MAX_L3_GAS_PRICE
 
 
