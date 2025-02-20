@@ -13,7 +13,7 @@ Install library
    - `cd t3rn` 
 3. Run Screen
    - `screen -S t3rn`
-4. Download upgrade 
+4. Download files 
    - `wget https://raw.githubusercontent.com/Moniak13/T3rn/refs/heads/main/Node`
 5. Give permission
    - `chmod +x Node`
